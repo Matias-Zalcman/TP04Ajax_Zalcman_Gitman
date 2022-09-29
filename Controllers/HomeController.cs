@@ -37,10 +37,9 @@ namespace TP04Ajax_Zalcman_Gitman.Controllers
             return View("Index");
         }
 
-        public IActionResult DetallePais(string Pais)
-        { 
-            ViewBag.Pais = Info.BuscarPais(Pais);
-            return View();
+        public Pais DetallePais(string Pais)
+        {
+            return Info.BuscarPais(Pais);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

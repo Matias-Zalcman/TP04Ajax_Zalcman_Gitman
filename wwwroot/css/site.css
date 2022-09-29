@@ -72,23 +72,13 @@ body {
   line-height: 35px; /* Vertically center the text there */
 }
 
-.paisMenu {
-  margin:3%;
-  margin-left:8%;
-  width:20%;
-  text-align:center;
-  list-style:none;
-  float:left;
-}
-
 .imgMenu {
-  width:80%;
+  width:60%;
 }
 
 .imgDetalle {
   margin:3%;
-  margin-left:0;
-  width:40%;
+  width:80%;
 }
 
 p {
