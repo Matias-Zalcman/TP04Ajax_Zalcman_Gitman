@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Agregar País";
+}
+<h1>@ViewData["Title"]</h1>
+<br>
+<form method="post" action='@Url.Action("GuardarPais","Home")'>
+    Nombre del país: <input type="text" name="nombre" placeholder="Ingresar nombre" size="30" required><br><br>
+    Bandera: <input type="text" name="imgBandera" placeholder="Ingresar nombre de la imagen" size="30" required><br><br>
+    Población: <input type="number" name="poblacion" min="0" required><br><br>
+    Fecha de la independecia: <input type="date" name="fechaIndependencia" size="15" required><br><br>
+    Atractivos turísticos: <br>
+    <textarea name="atractivosTuristicos" rows="3" cols="50"></textarea><br><br>
+    Himno nacional: <input type="text" name="himno" placeholder="Ingresar nombre del audio" size="25"><br><br>
+    <input type="submit" value="Guardar País">
+    <input type="reset" value="Borrar datos ingresados">
+</form>

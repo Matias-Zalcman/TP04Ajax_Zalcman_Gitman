@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Menú";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenido al sistema</h1>
+    <p>Elegí el país del que querés obtener todos los detalles:</p>
+</div>
+
+<ul>
+@{
+    foreach(Pais pais in ViewBag.ListaPaises)
+    {
+        <li class="paisMenu">
+            <a href='@Url.Action("DetallePais","Home",new {Pais=pais.Nombre})'><img class="imgMenu" src="/@pais.ImgBandera"></a>
+            <p>@pais.Nombre</p>
+        </li>
+    }
+}
+</ul>
